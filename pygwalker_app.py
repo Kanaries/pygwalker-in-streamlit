@@ -14,10 +14,18 @@ st.title("Use Pygwalker In Streamlit")
 
 # Add subtitle
 SUB_TITLE = """
-<span>Learn how to use pygwalker: </span>
-<a target="_blank" href="https://docs.kanaries.net/graphic-walker/create-data-viz">document</a>
+<div>
+    <span>Don't know how to use PyGWalker? Check out the </span>
+    <a target="_blank" href="https://docs.kanaries.net/graphic-walker/create-data-viz">document</a>
+    <span> for more details!</span>
+</div>
+<br/>
+<div>
+    <span>Reference: </span>
+    <a target="_blank" href="https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit.en">Exploring Data and Sharing Findings with Pygwalker and Streamlit</a>
+</div>
 """
-components.html(SUB_TITLE, height=40)
+components.html(SUB_TITLE, height=80)
 
 # Generate the HTML using Pygwalker
 pyg_html = pyg.walk(pd.DataFrame(), return_html=True, hideDataSourceConfig=False)

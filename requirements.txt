@@ -1,0 +1,3 @@
+pygwalker
+pandas==1.5.3
+streamlit==1.24.0

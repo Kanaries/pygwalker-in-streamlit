@@ -26,7 +26,7 @@ def get_all_country() -> List[str]:
     return get_data()["country"].unique().tolist()
 
 
-# When using `use_kernel_calc=True`, you should cache your pygwalker renderer, if you don't want your memory to explode
+# You should cache your pygwalker renderer, if you don't want your memory to explode
 @st.cache_resource
 def get_pyg_renderer() -> "StreamlitRenderer":
     df = get_data()

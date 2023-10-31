@@ -6,3 +6,8 @@ Build a visual exploration app using pygwalker in streamlit. [pygwalker](https:/
 
 
 <img width="1579" alt="pygwalker-in-streamlit" src="https://github.com/Kanaries/pygwalker-in-streamlit/assets/22167673/a0a2d466-7283-4d53-9de2-cd609d428b1d">
+
+## References
++ https://github.com/Sven-Bo/PyGWalker-Guide-for-Streamlit-and-Jupyter
++ https://github.com/Jcharis/Streamlit_DataScience_Apps/tree/master/Using_PyGWalker_With_Streamlit
++ https://github.com/k-nai/streamlit_pygwalker_app

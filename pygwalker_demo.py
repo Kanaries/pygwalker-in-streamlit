@@ -24,17 +24,22 @@ def get_pyg_renderer() -> "StreamlitRenderer":
 renderer = get_pyg_renderer()
 
 st.subheader("Display Explore UI")
-# display explore ui, Developers can use this to prepare the charts you need to display.
-renderer.render_explore()
 
-st.subheader("Display Chart UI")
-
-tab1, tab2 = st.tabs(
-    ["registered per weekday", "registered per day"]
+tab1, tab2, tab3, tab4 = st.tabs(
+    ["graphic walker", "data profiling", "graphic renderer", "pure chart"]
 )
 
-# display chart ui
 with tab1:
-    renderer.render_pure_chart(0)
+    renderer.render_explore()
+
 with tab2:
+    renderer.render_explore(default_tab="data")
+
+with tab3:
+    renderer.render_filter_renderer()
+
+with tab4:
+    st.markdown("### registered per weekday")
+    renderer.render_pure_chart(0)
+    st.markdown("### registered per day")
     renderer.render_pure_chart(1)

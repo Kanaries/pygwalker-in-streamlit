@@ -14,6 +14,8 @@ init_streamlit_comm()
 # Add Title
 st.title("Use Pygwalker In Streamlit")
 
+st.markdown('### More details for pygwalker, please refer it: <a href="https://kanaries.net/pygwalker">https://kanaries.net/pygwalker</a>', unsafe_allow_html=True)
+
 # You should cache your pygwalker renderer, if you don't want your memory to explode
 @st.cache_resource
 def get_pyg_renderer() -> "StreamlitRenderer":

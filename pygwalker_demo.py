@@ -35,7 +35,7 @@ with tab1:
     renderer.explorer()
 
 with tab2:
-    renderer.explorer(default_tab="data")
+    renderer.explorer(default_tab="data", key="pyg_explorer_1")
 
 with tab3:
     renderer.viewer()
